@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book List</title>
+</head>
+    <body>
+        {% for book in books %}
+            <h4>Title: {{ book.title }}</h4>
+            <p>Authors: {{ book.author }}</p>
+            <p>Format: {{ book.format }}</p>
+            <p>Rating: {{ book.avg_rating }}</p>
+            <p>Number of Pages: {{ book.num_pages }}</p>
+        {% endfor %}
+    </body>
+</html>
