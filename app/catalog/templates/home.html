@@ -6,6 +6,8 @@
 </head>
     <body>
         {% for book in books %}
+            <img src="static/img/{{ book.image }}" alt="book-img" height="200" width="200" class="img-rounded">
+            
             <h4>Title: {{ book.title }}</h4>
             <p>Authors: {{ book.author }}</p>
             <p>Format: {{ book.format }}</p>
