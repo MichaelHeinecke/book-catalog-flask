@@ -9,6 +9,8 @@ from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 bootstrap = Bootstrap()
 login_manager = LoginManager()
+login_manager.login_view = 'authentication.login'
+login_manager.session_protection = 'strong'
 bcrypt = Bcrypt()
 
 
